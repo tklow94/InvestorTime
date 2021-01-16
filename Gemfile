@@ -67,8 +67,3 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 
 
 
-# client = IEX::Api::Client.new(
-#   publishable_token: 'Tpk_4111cb1b74644c61899ee6986af10366',
-#   secret_token: 'Tsk_df6b76df91514b17b891fe229259e6a4',
-#   endpoint: 'https://sandbox.iexapis.com/v1'
-# )
