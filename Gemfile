@@ -28,6 +28,8 @@ gem 'jbuilder', '~> 2.7'
 gem 'devise-bootstrap-views', '~> 1.0'
 gem 'devise'
 
+gem 'iex-ruby-client'
+
 # Reduces boot times through caching; required in config/boot.rb
 gem 'bootsnap', '>= 1.4.2', require: false
 
@@ -61,3 +63,12 @@ end
 
 # Windows does not include zoneinfo files, so bundle the tzinfo-data gem
 gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
+
+
+
+
+# client = IEX::Api::Client.new(
+#   publishable_token: 'Tpk_4111cb1b74644c61899ee6986af10366',
+#   secret_token: 'Tsk_df6b76df91514b17b891fe229259e6a4',
+#   endpoint: 'https://sandbox.iexapis.com/v1'
+# )
