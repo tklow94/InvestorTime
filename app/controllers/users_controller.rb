@@ -10,11 +10,17 @@ class UsersController < ApplicationController
     @friends = current_user.friends
   end
 
-  def show
-    @user = User.find(params[:id])
-    @tracked_stocks = @user.stocks
-    
-  end
+  # def refresh
+  #   begin
+  #     stocks = current_user.stocks
+  #     refresh_stocks(stocks)
+  #     redirect_to my_portfolio_path
+  #   rescue => exception
+  #     flash[:alert] = "Oops! Could not refresh stocks. Please try again."
+  #     redirect_to my_portfolio_path
+  #   end    
+  # end
+
 
   def search
     if params[:friend].present?
@@ -37,4 +43,11 @@ class UsersController < ApplicationController
         end
       end
 end
+
+def show
+  @user = User.find(params[:id])
+  @tracked_stocks = @user.stocks
+  
+end
+
 end
